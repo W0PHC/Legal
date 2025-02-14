@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pueblo Amateur Radio Club - Policies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function showContent(id) {
+            document.querySelectorAll('.content').forEach(el => el.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" onclick="showContent('legal')">Legal Disclaimer</a>
+        <a href="#" onclick="showContent('privacy')">Privacy Policy</a>
+        <a href="#" onclick="showContent('refund')">Refund & Donation Policy</a>
+    </div>
+
+    <div class="container">
+        <div id="legal" class="content">
+            <h1>Legal Disclaimer</h1>
+            <p>Last Updated: February 11, 2025</p>
+            <p>The information provided by the Pueblo Amateur Radio Club (PARC) on <a href="https://w0phc.org">w0phc.org</a> is for informational purposes only...</p>
+        </div>
+
+        <div id="privacy" class="content" style="display:none;">
+            <h1>Privacy Policy</h1>
+            <p>We collect personal information such as your name, email address, and call sign when registering...</p>
+        </div>
+
+        <div id="refund" class="content" style="display:none;">
+            <h1>Refund & Donation Policy</h1>
+            <p>Donations are voluntary and non-refundable unless an error occurred during processing...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact: <a href="mailto:parliamentarian@w0phc.org" style="color: white;">parliamentarian@w0phc.org</a></p>
+    </footer>
+</body>
+</html>
